@@ -3,3 +3,4 @@
 data
 datazip
 logs
+*/__pycache__

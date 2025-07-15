@@ -28,8 +28,11 @@ start_current_day = ((dt.datetime.now())
 directoryzip = r'datazip/'
 directory = r'data/'
 
-# Ensure the logs directory exists
+# Ensure the directories exist
 os.makedirs("logs", exist_ok=True)
+data_dir = 'data'
+os.makedirs(data_dir, exist_ok = True)
+os.makedirs('datazip', exist_ok = True)
 
 # Define the path to the JSON log file
 log_path = os.path.join("logs", "amp_extract_logs.csv")
@@ -95,9 +98,6 @@ for daydiff in daydiffs:
             # create a temp dir for extraction
             temp_dir = tempfile.mkdtemp()
 
-            # Create local output directory
-            data_dir = 'data'
-            os.makedirs(data_dir, exist_ok = True)
 
             # Unpack zip
             with zipfile.ZipFile(filepathzip,'r') as zip_ref:
@@ -139,7 +139,7 @@ for daydiff in daydiffs:
                         with gzip.open(gz_path, 'rb') as gz_file, open(output_path,'wb') as out_file:
                             shutil.copyfileobj(gz_file,out_file)
                             log_times.append(dt.datetime.now())
-                            log_items.append(gz_path)
+                            log_items.append(output_path)
                             log_descriptions.append(log_desriptions_dict['copy'])
             
             if delete_zip:
