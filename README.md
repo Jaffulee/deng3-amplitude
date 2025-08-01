@@ -34,6 +34,11 @@ S3_USER_ACCESS_KEY="your_aws_access_key"
 S3_USER_SECRET_KEY="your_aws_secret_key"
 AWS_BUCKET_NAME="your_bucket_name"
 
+Example schema
+
+<img width="1393" height="842" alt="image" src="https://github.com/user-attachments/assets/c09bd393-3a74-4ebe-a08e-9d2703e049b8" />
+
+
 
 python main.py
 
