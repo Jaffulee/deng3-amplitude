@@ -25,7 +25,7 @@ Install dependencies using:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 AMP_API_KEY="your_amplitude_api_key"
 AMP_SECRET_KEY="your_amplitude_secret_key"
