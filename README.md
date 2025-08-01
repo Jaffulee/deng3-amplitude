@@ -42,4 +42,5 @@ Example schema
 
 python main.py
 
-```
+
+Also contains proof of concept orchestration scripts, and an example sql silver layer script
