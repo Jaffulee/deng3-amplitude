@@ -19,6 +19,7 @@ tasks:
           - pip install -r requirements.txt
         commands:
           - python main.py
+        # WARNING: this has some security concerns - read the README
         env:
           S3_USER_ACCESS_KEY: "{{ kv('S3_USER_ACCESS_KEY') }}"
           S3_USER_SECRET_KEY: "{{ kv('S3_USER_SECRET_KEY') }}"
