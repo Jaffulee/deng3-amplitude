@@ -57,6 +57,29 @@ In dbt, the raw Amplitude event data is:
 
 <hr>
 
+<h2>Example Downstream Schema</h2>
+
+<p>
+The diagram below illustrates an <strong>example downstream schema</strong> derived from raw
+Amplitude event data. It highlights how high-volume, nested event records can be
+structured into relational tables suitable for analytics.
+</p>
+
+<p>
+This schema is indicative rather than prescriptive, and is included to demonstrate how
+raw event data supports analytics use cases once modelled downstream.
+</p>
+
+<p>
+<img
+  src="https://github.com/user-attachments/assets/c09bd393-3a74-4ebe-a08e-9d2703e049b8"
+  alt="Example Amplitude downstream schema"
+  width="100%"
+/>
+</p>
+
+<hr>
+
 <h2>Features</h2>
 
 <ul>
